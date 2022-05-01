@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+    <title>Welcome, User</title>
+  </head>
+  <body>
+  <style>
+  .container{  
+		
+        text-align: center;  
+        margin: auto;  
+          padding: 80px; 
+        border-radius: 15px ;  
+          
+} </style>
+   <div class="container">
+   <h1>Welcome, User</h1>
+    <form action="AdminAction">
+      <label for="adminchoice">
+        Select Action To Perform
+      </label>
+      <Select name="adminchoice" id="adminchoice" required > 
+        <option value="add">Add Product</option>
+        <option value="remove">Remove Product</option>
+        <option value="edit">Edit Product</option>
+        <option value="search">Search Product</option>
+        <option value="viewAll">View All Products</option>
+      </Select>
+      <br>
+      <input type="submit" class="button-primary" value="Send">
+    </form>
+   </div>
+
+  </body>
+</html>
